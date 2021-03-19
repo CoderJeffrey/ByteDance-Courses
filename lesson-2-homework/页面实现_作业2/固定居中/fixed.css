@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: #666666;
+    font: 100% 宋体,新宋体;
+    color: black;
+}
+
+.center #mid_content{
+    /* position: fixed; */
+    margin: 0 auto;
+    width: 780px;
+    border: 1px solid black;
+    text-align: left;
+    background:white;
+    padding: 0 20px;
+}

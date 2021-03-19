@@ -1,0 +1,55 @@
+body{
+    background: #666666;
+    margin: 0;
+    padding: 0;
+    font: 100% 宋体,新宋体;
+    color: black;
+    text-align: center;
+}
+
+.absolute #mainContent{
+    /* relative的意义是什么 */
+    position: relative;
+    width: 780px;
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: left;
+    background: #FFFFFF;
+}
+
+.absolute #left_mainContent{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    width: 150px;
+    background: #EBEBEB;
+    padding: 15px 10px 15px 20px;
+}
+
+.absolute #right_mainContent{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: black;
+    width: 150px;
+    background: #EBEBEB;
+    padding: 15px 10px 15px 20px;
+}
+
+.absolute #center_mainContent{
+    margin: 0 200px;
+    padding: 0 10px;
+}
+
+.fltrt{
+    float: right;
+    margin-left: 8px;
+}
+
+.fltlft{
+    float: left;
+    margin-right: 8px;
+}
+
+

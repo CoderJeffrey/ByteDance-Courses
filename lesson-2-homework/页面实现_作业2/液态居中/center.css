@@ -1,0 +1,17 @@
+body{
+    font: 100% 宋体,新宋体;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #666666;
+    color:#000000;
+}
+
+.fluid #center{
+    margin: 0 auto;
+    width: 80%;
+    background: #FFFFFF;
+    text-align: left;
+    border: 1px solid #000000;
+    padding: 0 20px;
+}

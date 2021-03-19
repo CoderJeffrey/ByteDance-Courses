@@ -1,0 +1,68 @@
+body {
+    background: ff 3600px;;
+}
+
+.loading {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  /* 用来标记大写 */
+  text-transform:uppercase;
+  
+  width:150px;
+  text-align:center;
+  /* inline高度明确 */
+  line-height:50px;
+  
+  position:absolute;
+  left:0;right:0;top:50%;
+  margin:auto;
+
+  transform:translateY(-50%);
+}
+
+.loading span {
+  position:relative;
+  z-index:999;
+  color:#fff;
+}
+.loading:before {
+  content:'';
+  background:#61bdb6;
+  width:128px;
+  height:36px;
+  display:block;
+  position:absolute;
+
+  /*位置放在正中心*/
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  
+  animation:2s loadingBefore infinite ease-in-out;
+}
+
+@keyframes loadingBefore {
+  0%   {transform:translateX(-14px);}
+  50%  {transform:translateX(28px);}
+  75% {transform: translateX(-7px);}
+  100% {transform:translateX(-14px);}
+}
+
+
+.loading:after {
+  content:'';
+  background:#ff3600;
+  width:14px;
+  height:60px;
+  display:block;
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  margin:auto;
+  opacity:.5;
+  
+  animation:2s loadingAfter infinite ease-in-out;
+}
+
+@keyframes loadingAfter {
+  0%   {transform:translateX(-50px);}
+  50%  {transform:translateX(50px);}
+  100% {transform:translateX(-50px);}
+} 
